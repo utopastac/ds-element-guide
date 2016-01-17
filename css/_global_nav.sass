@@ -1,0 +1,92 @@
+#navigation-toggle
+  top: $space-16
+  left: $space-16
+  width: $space-24
+  height: $space-24
+  cursor: pointer
+  z-index: 20000
+
+  @include background-svg-icon($space-20, "../images/icon-menu.svg", black, auto)
+  position: fixed !important
+
+  @include min($screen-md-min)
+    display: none
+
+  &.navigation-open
+    @include background-svg-icon($space-20, "../images/icon-close.svg", black, auto)
+
+#navigation-main
+  padding: 5rem 2rem 2rem 2rem
+  width: 20rem
+  position: fixed
+  top: 0
+  left: -20rem
+  background: $grey-bg
+  height: 100vh
+  z-index: 1
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+
+  display: flex
+  flex-direction: column
+
+  @include animate(0.2s)
+
+  @include min($screen-md-min)
+    left: 0
+
+  &.navigation-open
+    left: 0
+
+  h6
+    margin-bottom: 1rem
+
+  ul
+    width: 14rem
+    margin-bottom: 4rem
+
+    &.utils
+      margin-top: auto
+      margin-bottom: 2rem
+
+    
+
+  li
+
+  a
+    @extend .ds-subhead
+    text-decoration: none
+    display: block
+    padding: $space-8
+    @include animate(0.2s)
+    position: relative
+
+    &:before
+      content: ""
+      position: absolute
+      z-index: -1
+      top: 0
+      bottom: 0
+      left: 0
+      width: 0px
+      background: $grey-light
+      @include animate(0.2s)
+
+
+    &.active, &:active, &:hover
+      padding-left: $space-16
+
+      &:before
+        width: 100%
+        background: $grey-light
+
+    &:hover
+      &:before
+        background: $ds-yellow
+
+    &.active
+      cursor: default
+
+      &:hover
+        &:before
+          background: $grey-light

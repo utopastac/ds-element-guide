@@ -1,0 +1,21 @@
+ul.list--vertical-scroll
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  height: 22rem
+  padding: $space-16
+
+
+.list--vertical-scroll-wrapper
+  position: relative
+  border-bottom: 1px solid $grey-light
+  border-top: 1px solid $grey-light
+  width: 100%
+  height: 22rem
+  overflow: hidden
+  @include full-width
+
+  &:after
+    pointer-events: none
+    content: ""
+    @include positioner(absolute, 0, -3px, 0, -3px)
+    box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.12), inset 0px -2px 3px 0px rgba(0,0,0,0.2)

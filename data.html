@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Data</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+    
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Data</h1>
+        <p>Tables &amp; such.</p>
+      </header>
+
+      <section id = "summary">
+        <header><h2>Summaries</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Summary</h4>
+          <p>A summary list of products that the user has actioned or is choosing to action. Tapping the row takes the user back to the product detail screen.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Row Height</td>
+              <td>64px</td>
+            </tr>
+            <tr>
+              <td>Bottom border</td>
+              <td>1px solid $grey-light</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class = "sg--example">
+          <!-- content -->
+          <div id = "summary">
+            <ul>
+              <li>
+                <div>
+                  <h3>Product</h3>
+                  <div>
+                    <p>Longer Attr</p>
+                    <p>2 LOL</p>
+                    <p>Hohoho</p>
+                  </div>
+                </div>
+                <div class = "actions">
+                  <img src = "images/icon-close.svg" />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Product</h3>
+                  <div>
+                    <p>Attr</p>
+                    <p>2 LOL</p>
+                    <p>Hohoho</p>
+                  </div>
+                </div>
+                <div class = "actions">
+                  <img src = "images/icon-close.svg" />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Product</h3>
+                  <div>
+                    <p>Attr</p>
+                    <p>2 LOL</p>
+                    <p>Hohoho</p>
+                  </div>
+                </div>
+                <div class = "actions">
+                  <img src = "images/icon-close.svg" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Table</h4>
+          <p>A more detailed list of product information with more attributes to display. The table header should become attached to the top of the screen as the user scrolls past it.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Header background</td>
+              <td>rgba($theme-colour, 0.12)</td>
+            </tr>
+            <tr>
+              <td>Header height</td>
+              <td>40px</td>
+            </tr>
+            <tr>
+              <td>Row Height</td>
+              <td>56px</td>
+            </tr>
+            <tr>
+              <td>Bottom border</td>
+              <td>1px solid $grey-light</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <table class = "table--product-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Longer Attr</th>
+                <th>Attr</th>
+                <th>Attr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h4>Product Title</h4>
+                  <p>00000000</p>
+                </td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+              </tr>
+               <tr>
+                <td>
+                  <h4>Product Title</h4>
+                  <p>00000000</p>
+                </td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+              </tr>
+               <tr>
+                <td>
+                  <h4>Product Title</h4>
+                  <p>00000000</p>
+                </td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- -->
+        </div>
+      </section>
+
+      
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-data"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

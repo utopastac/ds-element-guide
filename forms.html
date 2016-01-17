@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Forms</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+    
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Forms</h1>
+        <p>We should aim to keep any form or data entry fields as simple as possible. If we can infer information such as location then do not ask the user to input it.</p>
+        <p>Always show the correct and most useful keyboard with the relevant fields. For instance, numerical input fields should always display the numeric specific keyboard.</p>
+      </header>
+
+      <section id = "form-elements">
+        <header><h2>Form Elements</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Input field</h4>
+          <p>Standard entry field with label directly above. Use whereever possible in this format.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <h5 class = "sg--h5">Normal</h5>
+          <form>
+            <label for="quantity">Quantity</label>
+            <input type = "text" id = "quantity">
+          </form>
+
+          <h5 class = "sg--h5">Invalid</h5>
+          <form>
+            <label for="quantity">
+              Quantity
+              <span class="ds-error-message">Error message goes here</span>
+            </label>
+            
+            <input type = "text" id = "quantity" value="fail" pattern="not-fail">
+          </form>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Input field inline-labels</h4>
+          <p>Entry field with labels to the left when space is at a premium and the data fields are easily comparable.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <form class = "form form--inline-label">
+            <label for="quantity">Quantity</label>
+            <input type = "text" id = "quantity">
+            <label for="quantity">Quantity</label>
+            <input type = "text" id = "quantity">
+          </form>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Password Field</h4>
+          <p>A special input field for password entry that allows the user to toggle whether or not to 'hide' their password as they type. In general if will be easier for the user to show the password by default as they type.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <form class = "form form--password-field">
+            <label for="password">Password</label>
+            <div>
+              <input type = "text" id = "password">
+              <button class = "field-button button--outline">Show</button>
+            </div>
+          </form>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Search Field</h4>
+          <p>A special input field that lets the user know with an icon that whatever they scan will be entered into this field and automatically submitted.</p>
+        </div>
+        <div class = "sg--example">
+          <form class = "form" id ="form--product-search">
+            <input type="text" placeholder = "Please scan a product"></input>
+          </form>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Stepped Control</h4>
+          <p>For inputing numerical data, the addition of a stepped control for small adjustments of quantity so that the user can avoid inputing manually.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <form class = "form form--stepped-control">
+            <label for="quantity">Quantity</label>
+            <div>
+              <input type = "text" id = "quantity" placeholder = "1">
+              <ul>
+                <li class = "button--minus"></li>
+                <li class = "button-plus"></li>
+              </ul>
+            </div>
+          </form>
+          <!-- -->
+        </div>
+      </section>
+
+      <section id = "radio-buttons">
+        <header><h2>Radio Buttons</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Radio Button List</h4>
+          <p>For mutually exlusive selection of options within a list. Use instead of a segmented control when there are more than 3 options or longer titles on the options.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <form class = "form form--radio">
+            <label for="radio-1" class = "active">
+              <input id="radio-1" type="radio" name="radio-group" value="Option 1">
+              Option 1
+            </label>
+            <label for="radio-2">
+              <input id="radio-2" type="radio" name="radio-group" value="Option 2">
+              Option 2
+            </label>
+            <label for="radio-3">
+              <input id="radio-3" type="radio" name="radio-group" value="Option 3" checked>
+              Option 3
+            </label>
+          </form>
+          <!-- -->
+        </div>
+
+      </section>
+
+      <section id = "checkbox-list">
+        <header><h2>Checkboxes</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Checkbox list</h4>
+          <p>Use a checkbox list whenever a user can select more than one option from a list.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <form class = "form form--checkbox">
+            <label for="check-1" class = "active">
+              <input id="check-1" name="form-name" type="checkbox" value="Option-1">
+              Option 1
+            </label>
+            <label for="check-2">
+              <input id="check-2" name="form-name" type="checkbox" value="Option-2">
+              Option 2
+            </label>
+            <label for="check-3">
+              <input id="check-3" name="form-name" type="checkbox" value="Option-3" checked>
+              Option 3
+            </label>
+          </form>
+          <!-- -->
+        </div>
+      </section>
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-forms"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

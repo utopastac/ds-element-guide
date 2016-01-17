@@ -1,0 +1,57 @@
+ul.list--accordian
+  > li
+    
+    border-top: $border-width solid $theme-colour
+    color: $theme-colour
+    
+    @include active-state
+    @extend .ds-medium
+
+    @include background-svg-icon($space-16, "../images/icon-arrow-down.svg")
+
+    &:last-child
+      border-bottom: $border-width solid $theme-colour
+
+    ul
+      display: none
+      margin-top: $space-16
+      flex-wrap: wrap
+
+      li
+        display: flex
+        align-items: center
+        width: 32%
+        margin-right: 2%
+        margin-bottom: 2%
+        background: $theme-colour
+        padding: $space-8
+        text-align: center
+        min-height: 8rem
+        border-radius: $border-radius
+        cursor: pointer
+
+        @extend .ds-copy
+
+        p
+          color: white
+          opacity: 1
+
+        @include active-state-darken
+
+        > *
+          width: 100%
+          line-height: 2rem
+
+        &:nth-of-type(3n)
+          margin-right: 0
+
+    &.active
+      background-color: rgba($theme-colour, 0.08)
+      @include background-svg-icon($space-16, "../images/icon-arrow-up.svg")
+      color: $theme-colour
+
+      &:after
+        top: $space-28
+
+      ul
+        display: flex

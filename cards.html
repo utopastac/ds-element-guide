@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Cards</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+    
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Cards</h1>
+        <p>Cards are self contained actionable items, often presented as a list. They have an overview of important information and often some action controls.</p>
+      </header>
+
+      
+
+      <section id = "cards">
+        <header><h2>Product Cards</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Product Card</h4>
+          <p>Used when detailed product information is required in a list form. Various attributes can be displayed as well as two action buttons (for instance, 'dismiss' and 'accept').</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <article class = "card-container">
+            <div class = "card card--product">
+              <header>
+                <h1>Product Title</h1>
+                <h6>Limited Collection</h6>
+              </header>
+              <div>
+                <div class = "image">
+                  <img src = "images/product.jpeg" />
+                </div>
+                <div>
+                  <table class = "table--product-details">
+                    <tbody>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <footer>
+                <ul class = "card-buttons">
+                  <li>Secondary</li>
+                  <li class = "primary">Primary</li>
+                </ul>
+              </footer>
+            </div>
+          </article>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Card Alt</h4>
+          <p>An alternate product card with a header that can contain more semantic information, in this istance location. The primary focus of the task at hand is visualised large (in this instance 'size').</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <article class = "card-container">
+            <div class = "card card--full card--product-alt">
+              <header class = "top-header">
+                <h4>Fitting room 1</h4>
+                <button class = "button--link">View all Items</button>
+              </header>
+              <header>
+                <div class = "image">
+                  <img src = "images/product.jpeg" />
+                </div>
+                <div class = "title">
+                  <h6>Limited Collection</h6>
+                  <h1>Siren Lace Textured Mesh Padded Underwired Plunge Bra</h1>
+                </div>
+              </header>
+              <div>
+                <div>
+                  <h2>34B</h2>
+                  <h4>Grey Mix</h4>
+                </div>
+                
+                <div>
+                  <table class = "table--product-details">
+                    <tbody>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                      <tr>
+                        <td>Attr name</td>
+                        <td>xxxx</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <footer>
+                <ul class = "card-buttons">
+                  <li>Secondary</li>
+                  <li class = "primary">Primary</li>
+                </ul>
+              </footer>
+            </div>
+          </article>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Card Small</h4>
+          <p>A smaller product card to create a scannable and comparable list of products. Used when space is at a premium and the user needs to be able to view more than one item at once.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <article class = "card-container">
+            <div class = "card card--product-small">
+              <header class = "header--product-details">
+                <h1>Product Title</h1>
+                <h6>Limited Collection</h6>
+                <p class = "price">£4.49</p>
+              </header>
+              <div>
+                <div class = "image">
+                  <img src = "images/product.jpeg" />
+                </div>
+                <div>
+                  <h3>34B</h3>
+                  <h3>Grey Mix</h3>
+                  <h3>T-02420248</h3>
+                </div>
+                <div class = "actions">
+                  <button class = "button--link">Not Found</button>
+                  <button class = "button--outline">Found</button>
+                </div>
+              </div> 
+            </div>
+          </article>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Card Grid</h4>
+          <p>An even smaller product card to be used in a 2x2 grid format. Used when space is really at a premium and the user needs to be able to view more than one item at once.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <article class = "card-container">
+            <div class = "card card--product-grid">
+              <div class = "product">
+                <img src = "images/product.jpeg" />
+                <header class = "header--product-details">
+                  <h1>Product Title</h1>
+                  <h6>Limited Collection</h6>
+                  <p class = "price">£4.49</p>
+                </header>
+                <div class = "product--meta">
+                  <p>T24882</p>
+                  <p>34B</p>
+                  <p>Grey Mix</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- -->
+        </div>
+        
+      </section>
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-cards"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

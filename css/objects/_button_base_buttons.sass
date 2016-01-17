@@ -1,0 +1,36 @@
+ul.base-buttons
+  display: flex
+  align-items: stretch
+  width: 100%
+  background: $theme-colour
+  height: $button-height-large
+
+  @include positioner(absolute, auto, 0, 0, 0)
+  
+  @extend .ds-body
+  @extend .ds-caps
+  @extend .ds-bold
+
+  li
+    color: white
+    text-align: center
+    flex: 1
+    line-height: $button-height-large
+    cursor: pointer
+
+    @include active-state-darken
+
+    &:not(:first-child)
+      border-left: 1px solid rgba(white, 0.3)
+
+  &.base-buttons-blank
+    background: white
+    border-top: 1px solid rgba($theme-colour, 0.3)
+    margin-top: $space-16
+
+    li
+      color: $theme-colour
+      @include active-state
+
+      &:not(:first-child)
+        border-left: 1px solid rgba($theme-colour, 0.3)

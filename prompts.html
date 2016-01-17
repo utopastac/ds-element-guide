@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Prompts &amp; Notifications</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+    
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Prompt and Notifications</h1>
+        <p>Feeback from the system to the user is vital in building confidence in the system. Use prompts when the user is performing a potantially damaging action and there is no undo option. Use notifications to let users know something has happened or changed after their action.</p>
+      </header>
+
+      <section id = "prompts">
+        <header><h2>Prompts</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Do something prompt</h4>
+          <p>Use when the user is about to change the state of a system irreversably. Generally the button options will be some form of 'cancel' or 'confirm'. Make the positive action match the task the user is trying to complete.</p>
+        </div>
+        <div class = "sg--example overlay-bg">
+          <!-- content -->
+          <div class = "prompt">
+            <div>
+              <div class = "image-svg list" ></div>
+              <h1>Thing happens</h1>
+              <p>Thing has happened. Do thing to fix thing. Please fix the thing.</p>
+            </div>
+            <ul class = "base-buttons base-buttons-blank">
+              <li>Cancel</li>
+              <li>Confirm</li>
+            </ul>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Confirm something prompt</h4>
+          <p>Rarely used prompt to remind the user of what they have done or are about to do. Use for messaging change in applications or when there is nothing for the user to perform.</p>
+        </div>
+        <div class = "sg--example overlay-bg">
+          <!-- content -->
+          <div class = "prompt">
+            <div>
+              <div class = "image-svg list" ></div>
+              <h1>Thing happens</h1>
+              <p>You must accept this thing. It is the best thing that ever happened.</p>
+            </div>
+            <ul class = "base-buttons base-buttons-blank">
+              <li>Confirm</li>
+            </ul>
+          </div>
+          <!-- -->
+        </div>
+      </section>
+
+      <section id = "notifications">
+        <header><h2>Notifications</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Success Notification</h4>
+          <p>Display when a user action has successfully been comitted to the server.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div class = "notification notification-success">
+            <h5>Success messages are often quite long and tell you the current state of the system.</h5>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Accepted Notification</h4>
+          <p>When a user has successfully added a product to a list/summary - with space for product details.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div class = "notification notification-accepted">
+            <h4>Accepted</h4>
+            <p>Extra Details <span>00000000</span></p>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Scanned Notification</h4>
+          <p>When a user has successfully scanned a product that requires no further action - with space for product details.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div class = "notification notification-accepted">
+            <h4>Scanned</h4>
+            <p>Product Details name<br/><span>00000000</span></p>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Error Notification</h4>
+          <p>When a user action has been unsuccessful for some reason.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div class = "notification notification-error">
+            <h4>Error</h4>
+            <p>Error reason<br/><span>code: 00000000</span></p>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Warning Notification</h4>
+          <p>Used when a system is in an unexpected state and might need user action.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div class = "notification notification-warning">
+            <h4>Warning</h4>
+            <p>Warning reason<br/><span>code: 00000000</span></p>
+          </div>
+          <!-- -->
+        </div>
+      </section>
+
+
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-prompts"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17248) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 1 + !</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="INFORMATIVE-PROMPTS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Printer_not_Connected" sketch:type="MSArtboardGroup" transform="translate(-247.000000, -70.000000)">
+            <g id="Triangle-1-+-!" sketch:type="MSLayerGroup" transform="translate(249.000000, 72.000000)">
+                <polygon id="Triangle-1" stroke="#4A4A4A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#F8E81C" sketch:type="MSShapeGroup" points="18 0 36 28 0 28 "></polygon>
+                <path d="M19.4878207,19.899563 L16.3550476,19.899563 L16.3550476,10 L19.4878207,10 L19.4878207,19.899563 Z M16,22.9905658 C16,22.7260192 16.0487315,22.4753999 16.1461961,22.2387003 C16.2436606,22.0020007 16.3794128,21.7966321 16.5534566,21.6225882 C16.7275004,21.4485444 16.932869,21.3127923 17.1695686,21.2153277 C17.4062682,21.1178632 17.6568876,21.0691317 17.9214342,21.0691317 C18.1859808,21.0691317 18.4366001,21.1178632 18.6732997,21.2153277 C18.9099993,21.3127923 19.1153679,21.4485444 19.2894118,21.6225882 C19.4634556,21.7966321 19.5992077,22.0020007 19.6966723,22.2387003 C19.7941368,22.4753999 19.8428683,22.7260192 19.8428683,22.9905658 C19.8428683,23.2551124 19.7941368,23.5057318 19.6966723,23.7424314 C19.5992077,23.979131 19.4634556,24.1844996 19.2894118,24.3585434 C19.1153679,24.5325872 18.9099993,24.6683394 18.6732997,24.7658039 C18.4366001,24.8632685 18.1859808,24.912 17.9214342,24.912 C17.6568876,24.912 17.4062682,24.8632685 17.1695686,24.7658039 C16.932869,24.6683394 16.7275004,24.5325872 16.5534566,24.3585434 C16.3794128,24.1844996 16.2436606,23.979131 16.1461961,23.7424314 C16.0487315,23.5057318 16,23.2551124 16,22.9905658 L16,22.9905658 Z" id="!" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+.form--stepped-control
+  > div
+    position: relative
+    display: inline-block
+    width: 100%
+
+    input
+      width: calc(100% - 9.6rem)
+
+      + ul
+        position: absolute
+        width: $space-88
+        top: 0
+        right: 0
+        @include outline-button-row()

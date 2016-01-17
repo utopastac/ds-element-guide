@@ -1,0 +1,58 @@
+form
+  max-width: 50rem
+
+.form
+  margin: 0
+
+fieldset
+  border: none
+  padding: 0
+  margin-top: $space-20
+
+label
+  display: block
+  @extend .ds-subhead
+  margin-bottom: $space-8
+
+textarea, input[type="text"], select
+
+
+input[type="text"]
+  height: $button-height
+  @extend .ds-subhead
+  padding: $space-8
+  display: inline-block
+  vertical-align: top
+  //@include animate(0.2s)
+  transition: border-color 0.3s ease-in-out
+
+  &:focus
+    outline: none
+    border: 3px solid $theme-colour
+
+  &:invalid
+    outline: none
+    border: 3px solid $ds-red
+
+  + .field-button
+    text-transform: none
+    background: none
+    @extend .ds-subhead
+    padding: 0 $space-16
+    vertical-align: top
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+
+    @include active-state
+
+select
+  border-radius: 0px
+  border: 1px solid $grey-medium
+  background-size:  auto 100%
+  box-shadow: none
+  max-width: 50%
+  outline: none
+  display: inline-block
+  -webkit-appearance: none
+  appearance: none
+  cursor: pointer

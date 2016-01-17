@@ -1,0 +1,20 @@
+button, input[type="submit"], a.button
+  height: $button-height
+  line-height: $button-height - 0.4rem
+  padding: 0 $space-20
+  background: $theme-colour
+  display: block
+  border: none
+  color: white
+  outline: none
+  cursor: pointer
+  border-radius: $border-radius
+
+  @include active-state-darken
+
+  @extend .ds-body
+  @extend .ds-caps
+  @extend .ds-bold
+
+  &:focus
+    outline: 2px solid $ds-yellow

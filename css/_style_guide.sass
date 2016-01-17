@@ -1,0 +1,379 @@
+#style-guide
+
+  padding: 0 0 $space-60
+  position: static
+  overflow-y: auto
+  width: 100%
+
+  #buttons
+    > *
+      margin-bottom: 2rem
+
+  #colours
+    ul
+      &.no-space
+        margin-bottom: 0
+
+  #page-heading
+    margin-bottom: 2rem
+    max-width: 50rem
+
+    h1
+      @extend .ds-display-3
+      margin-bottom: 1.6rem
+      line-height: 1
+    p
+      @extend .ds-title
+      line-height: 2.8rem
+
+    h5
+      margin: 3rem 0 0.5rem 0
+
+    ul
+
+      li
+
+        a
+          @extend .ds-h4
+          color: $theme-colour
+          text-decoration: none
+          @include background-svg-icon(10px, "../images/icon-navigation-arrow-down.svg", $theme-colour, auto)
+
+
+          padding-left: $space-16
+
+          &:after
+            left: 0
+
+
+  #main-content
+    padding-top: 5rem
+    padding-left: 1.2rem
+    padding-right: 1.2rem
+    width: 100%
+    max-width: 100rem
+
+    @include animate(0.2s)
+
+    &.navigation-open
+      opacity: 0.2
+
+    @include min($screen-md-min)
+      width: calc(100% - 20rem)
+      margin-left: 20rem
+      padding-left: 3rem
+      padding-right: 3rem
+
+
+    > section
+      margin-bottom: 2rem
+      padding-top: 6rem
+      display: flex
+      flex-wrap: wrap
+      // background: $grey-bg
+      // padding: 2rem
+      > header
+        margin-bottom: 1.5rem
+        width: 100%
+
+        h2
+          @extend .ds-display-0
+
+        p
+          margin-top: 1rem
+          max-width: 60rem
+          margin-bottom: 3rem
+          @extend .ds-subhead
+
+      > h4
+        margin-bottom: 1rem
+
+      > *
+        &:not(h4):not(h2):not(header)
+          margin-bottom: 5rem
+
+.sg--h5
+  margin: 2rem 0 0.5rem 0
+
+  &:first-child
+    margin-top: 0
+
+ul.base-buttons
+  &.sg
+    position: relative
+
+table.sg
+  tr
+    border-bottom: 1px solid $grey-light
+  td
+    vertical-align: middle
+    padding: $space-12 0
+
+    &:last-child
+      text-align: left
+
+      @extend .ds-bold
+
+#sg--grid-example
+  position: relative
+  max-width: 360px
+  height: 120px
+  border: 1px solid rgba(black, 0.15)
+  box-sizing: border-box
+
+.sg--grid
+  @include positioner()
+  width: 360px
+  height: 120px
+
+.sg--padding-left
+  @include positioner(absolute, 20px, auto, 20px, 0px)
+  width: 16px
+  background: rgba(pink, 0.7)
+
+.sg--padding-right
+  @include positioner(absolute, 20px, 0px, 20px, auto)
+  width: 16px
+  background: rgba(pink, 0.7)
+
+#sg--padding-demo
+  position: relative
+  max-width: 360px
+  height: 200px
+
+  > div
+    padding-top: 1rem
+    text-align: center
+
+  .frame
+    @include positioner()
+    background: rgba($grey-bg, 0.5)
+
+  .contents
+    @include positioner(absolute, 40px, 16px, 34px, 16px)
+    background: rgba(blue, 0.15)
+
+pre
+  background: #F4F4F4
+
+code, samp, kbd
+  font-family: "Courier New", Courier, monospace, sans-serif
+  text-align: left
+  color: $grey-dark
+
+pre code
+  line-height: 1.6em
+  font-size: 16px
+
+pre
+  padding: 0.1rem 0.5rem 0.3rem 0.7rem
+  border-left: 12px solid $grey-light
+  margin: 1.7rem 0 1.7rem 0.3rem
+  overflow: auto
+  width: 93%
+
+/* target IE7 and IE6 */
+*:first-child+html pre
+  padding-bottom: 2rem
+  overflow-y: hidden
+  overflow: visible
+  overflow-x: auto
+
+* html pre
+  padding-bottom: 2rem
+  overflow: visible
+  overflow-x: auto
+
+.sg--explanation
+  clear: both
+  width: 40rem
+  max-width: 40rem
+  padding-top: $space-16
+  border-top: 3px solid $ds-blue
+
+  @include min($screen-md-min)
+    margin-right: $space-32
+
+  h4
+    margin-bottom: 1rem
+
+  h5
+    margin-top: 3rem
+
+.sg--example
+  float: right
+  border: 1px solid $grey-light
+  padding: 2rem
+  width: 40rem
+  max-width: 40rem
+  min-height: 10rem
+  overflow: hidden
+  position: relative
+
+  &.sg--wide-example
+    width: 100%
+    max-width: 100rem
+
+  &.grey-bg
+    background: $grey-bg
+
+  &.overlay-bg
+    background: rgba(0,0,0, 0.7)
+
+  &.sg--phone-screen
+
+    padding: 0
+
+    @include min($screen-md-min)
+      padding: 2rem
+      background: $grey-bg
+
+    > *
+      max-width: 36rem
+      height: 64rem
+      overflow: hidden 
+      background: white
+      border: 1px solid $grey-light
+      position: relative
+
+      .content-container
+        height: 64rem
+        overflow-y: auto 
+        -webkit-overflow-scrolling: touch
+        padding: $space-56 $space-16 $space-32 $space-16
+
+ul.colour-blocks, ul.icon-blocks
+  display: flex
+  flex-wrap: wrap
+
+  li
+    width: calc(33%)
+    margin-right: 1rem
+    margin-bottom: 1rem
+    height: 16rem
+    background: white
+    border-radius: $border-radius
+    padding: 10rem 1rem 1rem 0
+    position: relative
+
+    &:nth-child(3n)
+      margin-right: 0
+
+    @include min($screen-md-min)
+      width: calc(20% - 0.8rem)
+
+      &:nth-child(3n)
+        margin-right: 1rem
+
+      &:nth-child(5n)
+        margin-right: 0
+
+
+    h4
+      text-transform: uppercase
+
+    img
+      width: $space-60
+      max-height: $space-60
+      @include positioner(absolute, 50%, auto, auto, 50%)
+      transform: translate(-50%, -50%)
+
+    
+
+    &:after
+      content: ""
+      position: absolute
+      top: 0rem
+      left: 0rem
+      right: 0rem
+      height: 9rem
+      border-radius: $border-radius $border-radius 0 0
+
+    &.ms-dark
+      &:after
+        background: $ms-dark
+    &.ms-light
+      &:after
+        background: $ms-light
+    &.ms-gold
+      &:after
+        background: $ms-gold
+
+    &.ms-orange
+      &:after
+        background: $ms-orange
+    &.ms-blue
+      &:after
+        background: $ms-blue
+    &.ms-green
+      &:after
+        background: $ms-green
+    &.ms-sky-blue
+      &:after
+        background: $ms-sky-blue
+    &.ms-purple
+      &:after
+        background: $ms-purple
+    &.ms-teal
+      &:after  
+        background: $ms-teal
+    &.ms-navy
+      &:after
+        background: $ms-navy
+    &.ms-mint
+      &:after
+        background: $ms-mint
+    &.ms-lilac
+      &:after
+        background: $ms-lilac
+    &.ms-berry
+      &:after
+        background: $ms-berry
+
+    //digital stores colours
+    &.ds-green
+      &:after
+        background: $ds-green
+
+    &.ds-teal
+      &:after
+        background: $ds-teal
+
+    &.ds-blue
+      &:after
+        background: $ds-blue
+
+    &.ds-red
+      &:after
+        background: $ds-red
+
+    &.ds-yellow
+      &:after
+        background: $ds-yellow
+
+    &.ds-orange
+      &:after
+        background: $ds-orange
+
+    //grey shades
+    &.grey-dark
+      &:after
+        background: $grey-dark
+    &.grey-medium
+      &:after
+        background: $grey-medium
+    &.grey-light
+      &:after
+        background: $grey-light
+    &.grey-bg
+      &:after
+        background: $grey-bg
+
+ul.icon-blocks
+  li
+    background: $grey-light
+
+    &.dark
+      background: $grey-medium
+
+#grid-demo

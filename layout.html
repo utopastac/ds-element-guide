@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Layout</h1>
+        <p>Grids, guides, pages</p>
+      </header>
+
+      <section id = "grids-spaces">
+        <header><h2>Grids &amp; Spaces</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Grid</h4>
+          <p>All elements are aligned to a 4px grid, and all sizes are perfectly divisible by 4.</p>
+        </div>
+        <div class = "sg--example" style = "height: 160px">
+          <!-- content -->
+          <div id = "sg--grid-example">
+            <canvas class = "sg--grid" id = "grid-1"></canvas>
+            <canvas class = "sg--grid" id = "grid-2"></canvas>
+            <div class = "sg--padding-left"></div>
+            <div class = "sg--padding-right"></div>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Spacing</h4>
+          <p>Most content elements have a 16px padding to let the elements stand alone without the need for extra UI chrome.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div id = "sg--padding-demo">
+            <div class = "frame"><p>Frame<p></div>
+            <div class = "contents"><p>Contents<p></div>
+            <div class = "sg--padding-left"></div>
+            <div class = "sg--padding-right"></div>
+          </div>
+          
+          <!-- -->
+        </div>
+        
+      </section>
+
+      <section id = "dividers">
+        <header><h2>Dividing lines</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Full line</h4>
+          <p>Always try and avoid dividing lines where possible - they add visual noise that the user has to parse. Instead introduce deliniation between elements using white space. Where neccessary, use the following.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Height</td>
+              <td>1px</td>
+            </tr>
+            <tr>
+              <td>Colour</td>
+              <td>$grey-light</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <hr />
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Indented line</h4>
+          <p>Use an indented line whenever the content is also indented.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <hr class = "hr--indented"/>
+          <!-- -->
+        </div>
+        
+      </section>
+
+      <section id = "headers">
+        <header><h2>Section Headers</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>App header</h4>
+          <p>The app header is fixed on every screen of every app. It gives contexual information about where in the hierarchy the user is, and provides navigational control. The current app is always displayed in capitals under the screen title. There is space on the right hand side for contextual actions.</p>
+        </div>
+
+        <div class = "sg--example">
+          <!-- content -->
+          <header id = "app-header">
+            <button id = "button--back-arrow"></button>
+            <div>
+              <h1>Name of screen</h1>
+              <h6>Name of App</h6>
+            </div>
+            <ul class = "ul-icons">
+              <img src = "images/icon-navbar-settings.svg" />
+              <img src = "images/icon-navbar-printer.svg" />
+              <img src = "images/icon-navbar-network.svg" />
+              <button class = "button--link">Exit</button>
+            </ul>
+          </header>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Header</h4>
+          <p>The main block of information about the product the user is currently looking at. Split into 3 sections - Title, subtitle, and meta information on the right.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div id = "product-header">
+            <h1>Product Title</h1>
+            <h4>02842842</h4>
+            <p class = "price">£19.00</p>
+          </div>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Small header</h4>
+          <p>Used as a header for various sections within screens.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <header class = "header--section">
+            <h5>Object Lol<h5>
+          </header>
+          <ul class = "segmented-control">
+            <li class = "active">Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+          </ul>
+          
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product Details Header</h4>
+          <p>Displays in a small format product detail information.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <header class = "header--product-details">
+            <h1>Product Title</h1>
+            <h6>Limited Collection</h6>
+            <p class = "price">£4.49</p>
+          </header>
+          <ul class = "segmented-control">
+            <li class = "active">Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+          </ul>
+          
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product status header</h4>
+          <p>Describes how far through a list the user currently is and gives the option to view the full list summary.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <header class = "header--product-status">
+            <h5>Product <strong>1</strong> of 4</h5>
+            <button class = "button--link">Products Summary</button>
+          </header>
+          <!-- -->
+        </div>
+
+        
+      </section>
+
+      <section id = "content">
+        <header><h2>Content blocks</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Image block</h4>
+          <p>A block of centered text with an accompanying image.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <div class = "content content--image-block">
+            <img src = "images/icon-list.svg" />
+            <h3>This is your Title</h3>
+            <p>Content is longer than other things. It can be all about cats becasue they are cool and cute and fluffy</p>
+          </div>
+          <!-- -->
+        </div>
+      </section>
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-layout"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Buttons</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+    
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Buttons</h1>
+        <p>Use buttons to move though states on systems and to action items. Ideally we would only use one button per page. They are designed to have maximum contrast and so always use the <code>$theme-colour</code> as their basis. Disabled buttons are set at <code>40% opacity.</code></p>
+      </header>
+
+      <section id = "segmented-control">
+        <header><h2>Tabs</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Segmented Control</h4>
+          <p>Use a segmented control to switch between various states of a screen of related information or as a toggle button. Generally they can only have up to three options. The content directly below the control can be changed when an option is selected.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Height</td>
+              <td>44px</td>
+            </tr>
+            <tr>
+              <td>Colour</td>
+              <td>Theme Colour</td>
+            </tr>
+            <tr>
+              <td>Border radius</td>
+              <td>2 px</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul class = "segmented-control">
+            <li class = "active">Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+          </ul>
+          <!-- -->
+        </div>
+
+      </section>
+
+      <section id = "buttons">
+
+        <header><h2>Buttons &amp; button groups</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Inline Button</h4>
+          <p>Where possible use the standard button as it has the maximum contrast and button affordance.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Height</td>
+              <td>44px</td>
+            </tr>
+            <tr>
+              <td>Colour</td>
+              <td>Theme Colour</td>
+            </tr>
+            <tr>
+              <td>Border radius</td>
+              <td>2 px</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <h5 class = "sg--h5">Normal</h5>
+          <button class = "button--inline">Button</button>
+          <h5 class = "sg--h5">Active</h5>
+          <button class = "button--inline active">Button</button>
+          <h5 class = "sg--h5">Disabled</h5>
+          <button class = "button--inline" disabled>Button</button>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Link button</h4>
+          <p>When the action is of secondary importance and a standard button would be too distracting and take up too much space, use the link button.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <h5 class = "sg--h5">Normal</h5>
+          <button class = "button--link">Button Link</button>
+          <h5 class = "sg--h5">Active</h5>
+          <button class = "button--link active">Button Link</button>
+          <h5 class = "sg--h5">Disabled</h5>
+          <button class = "button--link" disabled>Button Link</button>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Outline button</h4>
+          <p>For 'toggleable' actions, where the button needs to show the state of a system, use the outline button.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Border width</td>
+              <td>1 px</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <h5 class = "sg--h5">Normal</h5>
+          <button class = "button--outline">Button Outline</button>
+          <h5 class = "sg--h5">Active</h5>
+          <button class = "button--outline active">Button Outline</button>
+          <h5 class = "sg--h5">Disabled</h5>
+          <button class = "button--outline" disabled>Button Outline</button>
+          <!-- -->
+        </div>
+        
+        <div class = "sg--explanation">
+          <h4>Full width button</h4>
+          <p>For buttons that are of the most importance for instance there is only one action a user can perform), use a full width button.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <h5 class = "sg--h5">Normal</h5>
+          <button class = "button--full">Button Full</button>
+          <h5 class = "sg--h5">Active</h5>
+          <button class = "button--full active">Button</button>
+          <h5 class = "sg--h5">Disabled</h5>
+          <button class = "button--full" disabled>Button</button>
+          <!-- -->
+        </div>
+        <div class = "sg--explanation">
+          <h4>Base buttons</h4>
+          <p>These are the primary action buttons on most screens when there is more than one option available to the user. The remain fixed at the bottom of the screen and as such are always available.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Height</td>
+              <td>56 px</td>
+            </tr>
+            <tr>
+              <td>Divider line</td>
+              <td>1px solid rgba(255, 255, 255, 0.3)</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <h5 class = "sg--h5">Normal</h5>
+          <ul class = "base-buttons sg">
+            <li>Left</li>
+            <li>Right</li>
+          </ul>
+
+          <h5 class = "sg--h5">Active</h5>
+          <ul class = "base-buttons sg">
+            <li class = "active">Left</li>
+            <li>Middle</li>
+            <li>Right</li>
+          </ul>
+
+          <h5 class = "sg--h5">Disabled</h5>
+          <ul class = "base-buttons sg">
+            <li class = "disabled">Left</li>
+            <li>Right</li>
+          </ul>
+          <!-- -->
+        </div>
+        
+
+      </section>
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-buttons"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

@@ -1,0 +1,53 @@
+ul.list--dropdown
+
+  @include full-width
+  
+  > li
+    
+    border-top: $border-width solid $theme-colour
+    color: $theme-colour
+    
+    @include active-state
+    @extend .ds-medium
+
+    @include background-svg-icon($space-16, "../images/icon-arrow-down.svg")
+
+    &:last-child
+      border-bottom: $border-width solid $theme-colour
+
+    ul
+      display: none
+      margin-top: $space-16
+      border-top: 1px solid rgba($theme-colour, 0.3)
+      padding-left: $space-16
+
+      li
+        display: block
+        text-align: left
+        height: $space-56
+        line-height: $space-56
+        cursor: pointer
+        
+        @include active-link-state
+        @extend .ds-copy
+
+        //@include active-state
+
+        background: none
+        @include background-svg-icon($space-16, "../images/icon-arrow.svg")
+
+        &:not(:first-child)
+          border-top: 1px solid rgba($theme-colour, 0.3)
+
+    &.active
+      background-color: rgba($theme-colour, 0.08)
+      @include background-svg-icon($space-16, "../images/icon-arrow-up.svg")
+      color: $theme-colour
+      padding-bottom: 0
+      padding-right: 0
+
+      &:after
+        top: $space-28
+
+      ul
+        display: block

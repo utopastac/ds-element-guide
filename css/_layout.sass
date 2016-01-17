@@ -1,0 +1,38 @@
+html
+  //overflow-x: hidden
+
+body
+
+.section
+
+
+hr.seperator, hr
+  border: 0
+  height: 1px
+  background-color: $grey-light
+  margin: 0 0 $space-20 0
+  width: calc(100% + #{$space-16})
+
+  &.hr--indented
+    margin-left: $left-margin-large
+    width: calc(100% - #{$left-margin-large - $space-16})
+
+.indented
+  padding-left: $left-margin-large
+
+.indented-small
+  padding-left: $space-16
+
+
+.row
+  display: flex
+
+  > *
+    flex: 1
+    margin-right: $space-16
+
+    &.col-primary
+      flex: 1.5
+
+    &:last-child
+      margin-right: 0

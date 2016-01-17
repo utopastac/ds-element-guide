@@ -1,0 +1,37 @@
+#app-header
+  height: 5.6rem
+  background: $theme-colour
+  padding: $space-8 $space-16
+  display: flex
+  align-items: center
+  z-index: $z-header-bar
+  
+  @include positioner
+
+  > div
+    margin-left: $space-16
+
+  h1, h6
+    color: white
+
+  h6
+
+
+  h1
+    @extend .ds-title
+    opacity: 1
+
+  ul.ul-icons
+    margin-left: auto
+    text-align: right
+    display: flex
+    flex-direction: row-reverse
+
+    > *
+      margin-left: $space-12
+
+    button
+      color: white
+
+    img
+      height: $space-20

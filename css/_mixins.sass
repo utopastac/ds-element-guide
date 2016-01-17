@@ -1,0 +1,192 @@
+@mixin disabled-state
+  &:disabled, &.disabled
+    opacity: 0.4
+    cursor: default
+
+@mixin active-state
+  &:active
+    outline: none !important
+  &:active, &.active
+    background: $theme-colour
+    color: white
+    p, h1, h2, h3, h4, h5, h6
+      color: white
+
+    &:after
+      background-color: white
+
+  @include disabled-state
+
+/////////////////////////
+
+@mixin active-state-darken
+  &:active
+    outline: none !important
+  &:active, &.active
+    background: darken($theme-colour, 10%)
+    color: white
+    p, h1, h2, h3, h4, h5, h6
+      color: white
+
+    &:after
+      background-color: white
+
+  @include disabled-state
+
+/////////////////////////
+
+@mixin active-link-state
+  &:active, &.active
+    background: none
+    color: black
+    p, h1, h2, h3, h4, h5, h6
+      color: black
+
+    &:after
+      background-color: black
+
+  @include disabled-state
+
+/////////////////////////
+
+@mixin full-width
+  margin-left: -$space-16
+  width: calc(100% + #{$space-32})
+
+/////////////////////////
+
+@mixin small-margin
+  margin: $space-8
+  margin-left: -$space-8
+  margin-right: -$space-8
+
+/////////////////////////
+
+@mixin table-row
+  display: flex
+  padding: $space-8 $space-8 $space-8 $space-16
+  align-items: center
+  background: white
+
+  h3
+    @extend .ds-subhead
+    @extend .ds-medium
+
+  p
+    opacity: $text-low-opacity
+    color: black
+
+  > div
+
+    &.actions
+      margin-left: auto
+
+    > div
+      display: flex
+
+      > *:not(:last-child)
+        margin-right: $space-16
+
+/////////////////////////
+
+@mixin block-form
+
+  label
+    display: block
+    position: relative
+    height: $space-60
+    line-height: $space-60
+    padding-left: $space-44
+    @include stepped-list
+    margin: 0
+
+    &:after
+      display: none
+
+    input
+      @include positioner(absolute, $space-16, auto, auto, $space-16)
+      top: 50%
+      transform: translateY(-50%)
+      // width: $space-32
+      // height: $space-32
+
+/////////////////////////
+
+@mixin background-svg-icon($size, $icon, $colour: $theme-colour, $rt: $space-12, $alpha: 1)
+  position: relative
+
+  &:after
+    display: block
+    content: ""
+    position: absolute
+    width: $size
+    height: $size
+    top: 50%
+    transform: translateY(-50%)
+    right: $rt
+    opacity: $alpha
+    
+    background-color: $colour
+    -webkit-mask: url($icon) no-repeat
+    mask: url($icon) no-repeat
+    -webkit-mask-position: center center
+    mask-position: center center
+
+/////////////////////////
+
+@mixin stepped-list
+  border-top: $border-width solid $theme-colour
+  border-left: $border-width solid $theme-colour
+  border-right: $border-width solid $theme-colour
+  color: $theme-colour
+
+  @extend .ds-medium
+  
+  // background: white url(../images/icon-arrow.svg) no-repeat right $space-16 center
+  // background-size: $space-8 auto
+
+  @include active-state
+  @include background-svg-icon($space-16, "../images/icon-arrow.svg")
+
+  &:first-child
+    border-top-left-radius: $border-radius
+    border-top-right-radius: $border-radius
+
+  &:last-child
+    border-bottom: $border-width solid $theme-colour
+    border-bottom-left-radius: $border-radius
+    border-bottom-right-radius: $border-radius
+
+/////////////////////////
+
+@mixin outline-button-row($ht: $segmented-control-height)
+  display: flex
+
+  li
+    border-left: $border-width solid $theme-colour
+    border-top: $border-width solid $theme-colour
+    border-bottom: $border-width solid $theme-colour
+    background: white
+    color: $theme-colour
+    text-align: center
+    padding: 0 $space-8
+    height: $ht
+    line-height: $ht
+    flex: 1
+    cursor: pointer
+
+    @extend .ds-subhead
+    @extend .ds-medium
+
+    @include active-state
+
+    &:first-child
+      border-top-left-radius: $border-radius
+      border-bottom-left-radius: $border-radius
+
+    &:last-child
+      border-right: $border-width solid $theme-colour
+      border-top-right-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+
+

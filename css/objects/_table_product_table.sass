@@ -1,0 +1,36 @@
+table.table--product-table
+
+  @include full-width
+  width: calc(100% + #{$space-32})
+
+  p
+    line-height: 1
+
+  h4
+    margin-bottom: $space-4
+    @extend .ds-copy
+    line-height: 1
+
+  tbody
+    tr
+      border-bottom: 1px solid $grey-light
+
+  td, th
+
+    padding: $space-12
+
+    &:first-child
+      padding-left: $space-16
+
+    &:last-child
+      padding-right: $space-16
+
+  th
+    vertical-align: middle
+    padding-top: 0
+    padding-bottom: 0
+    height: $space-40
+
+  td:first-child
+    p
+      opacity: 0.56

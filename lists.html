@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Digital Stores Element Guide - Buttons</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name = "format-detection" content = "telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/globals.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+      
+  </head>
+
+  <body id = "style-guide" class = "desktop">
+    
+
+    <nav id = "navigation-main">
+    </nav>
+
+    <article id = "main-content">
+
+      <header id = "page-heading">
+        <h1>Lists &amp; menus</h1>
+        
+      </header>
+
+      <section id = "navigation">
+        <header>
+          <h2>Navigation</h2>
+        
+          <p>Actionable lists are designed with maximum affordance in mind. They always use the <code>$theme-colour</code> as their primary and are deliberately deep, bearing in mind the context in which the devices are used.</p>
+        </header>
+
+        <div class = "sg--explanation">
+          <h4>Stepped list</h4>
+          <p>A standard list of options where selecting any of the options leads to another screen. Used in the main menu and within apps.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul class = "list list--stepped">
+            <li>Thing 1</li>
+            <li>Long thing 2</li>
+            <li>sm 3</li>
+            <li>Have a nice day 4</li>
+            <li>Hoopla 5</li>
+          </ul>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Stepped list Table row</h4>
+          <p>Use when each item in the list needs some more meta information.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul class = "list list--stepped-table-row">
+            <li>
+              <div>
+                <h3>Product</h3>
+                <div>
+                  <p>Attr</p>
+                  <p>2 LOL</p>
+                  <p>Hohoho</p>
+                </div>
+              </div>
+              <div class = "actions">
+                LOL
+              </div>
+            </li>
+          </ul>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Accordian menu</h4>
+          <p>In the main menu, when there are no 'deeper' options within the navigaiton tree, the last options (the apps themselves) are displayed within a disclosed accordian style menu which can be toggled open or closed.<p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul class = "list list--accordian">
+            <li class = "active">
+              Thing 1
+              <ul>
+                <li><p>App</p></li>
+                <li><p>App name longer name</p></li>
+                <li><p>Distributing assets</p></li>
+                <li><p>Leaf</p></li>
+                <li><p>Flattery is pointless</p></li>
+              </ul>
+            </li>
+            <li>Long thing 2</li>
+            <li>sm 3</li>
+            <li>Have a nice day 4</li>
+            <li>Hoopla 5</li>
+          </ul>
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Dropdown list</h4>
+          <p>In in-app internal navigation, when the user needs to compare within categories before making a deeper selection, display the next screen of options within a disclosed accordian style menu which can be toggled open or closed.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul class = "list list--dropdown">
+            <li class = "active">
+              Thing 1
+              <ul>
+                <li>App</li>
+                <li>App name longer name</li>
+                <li>Distributing assets</li>
+              </ul>
+            </li>
+            <li>Long thing 2</li>
+            <li>sm 3</li>
+            <li>Have a nice day 4</li>
+            <li>Hoopla 5</li>
+          </ul>
+          <!-- -->
+        </div>
+
+      </section>
+
+      <section id = "wayfinding">
+        <header>
+          <h2>Wayfinding</h2>
+        </header>
+
+        <div class = "sg--explanation">
+          <h4>Stepped Navigation</h4>
+          <p>More for wayfinding than a navigation system, this module shows the user which of a set of things they should be looking at currently. The current task is highlighted.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul id = "navigation--stepped">
+            <li>Step 1</li>
+            <li class = "active">Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+          </ul>
+          <!-- -->
+        </div>
+      </section>
+
+      <section id = "information">
+        <header><h2>Information</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Totals panel</h4>
+          <p>This module shows the user the current status of several related objects.</p>
+        </div>
+        <div class = "sg--example">
+          <!-- content -->
+          <ul id = "totals-panel">
+            <li class = "status-orange">
+              <h1>20</h1>
+              <p>Outstanding</p>
+            </li>
+            <li class = "status-green">
+              <h1>10</h1>
+              <p>On Hold</p>
+            </li>
+            <li class = "status-blue">
+              <h1>8</h1>
+              <p>Processed</p>
+            </li>
+            <li class = "status-grey">
+              <h1>0</h1>
+              <p>Other</p>
+            </li>
+          </ul>
+          <!-- -->
+        </div>
+      </section>
+
+      <section id = "products">
+        <header><h2>Products</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Product list - images</h4>
+          <p>shows a list of products with their respective imagery.</p>
+        </div>
+        <div class = "sg--example">
+          <ul class = "list--product-images">
+            <li class = "product">
+              <img src = "images/product.jpeg" />
+              <header class = "header--product-details">
+                <h1>Product Title</h1>
+                <h6>Limited Collection</h6>
+                <p class = "price">£4.49</p>
+              </header>
+              <div class = "product--meta">
+                <p>T24882</p>
+                <p>34B</p>
+                <p>Grey Mix</p>
+              </div>
+            </li>
+
+            <li class = "product">
+              <img src = "images/product.jpeg" />
+              <header class = "header--product-details">
+                <h1>Product Title</h1>
+                <h6>Limited Collection</h6>
+                <p class = "price">£4.49</p>
+              </header>
+              <div class = "product--meta">
+                <p>T24882</p>
+                <p>34B</p>
+                <p>Grey Mix</p>
+              </div>
+            </li>
+          </ul>
+          <!-- content -->
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Product card list</h4>
+          <p>Shows a list of product cards.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>Central margin</td>
+              <td>8px</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <ul class = "card-container list--product-cards">
+
+            <div class = "card card--product-grid">
+              <div class = "product">
+                <img src = "images/product.jpeg" />
+                <header class = "header--product-details">
+                  <h1>Product Title</h1>
+                  <h6>Limited Collection</h6>
+                </header>
+                <div class = "product--meta">
+                  <p>T24882</p>
+                  <p>34B</p>
+                  <p>Grey Mix</p>
+                </div>
+              </div>
+            </div>
+
+            <div class = "card card--product-grid">
+              <div class = "product">
+                <img src = "images/product.jpeg" />
+                <header class = "header--product-details">
+                  <h1>Product Title that is longer than normal</h1>
+                  <h6>Limited Collection</h6>
+                </header>
+                <div class = "product--meta">
+                  <p>T24882</p>
+                  <p>34B</p>
+                  <p>Grey Mix</p>
+                </div>
+              </div>
+            </div>
+            <div class = "card card--product-grid">
+              <div class = "product">
+                <img src = "images/product.jpeg" />
+                <header class = "header--product-details">
+                  <h1>Anti Bobble Funnel Neck Fleece Jacket with cashmere</h1>
+                  <h6>Limited Collection</h6>
+                </header>
+                <div class = "product--meta">
+                  <p>T24882</p>
+                  <p>34B</p>
+                  <p>Grey Mix</p>
+                </div>
+              </div>
+            </div>
+
+            <div class = "card card--product-grid">
+              <div class = "product">
+                <img src = "images/product.jpeg" />
+                <header class = "header--product-details">
+                  <h1>Product Title</h1>
+                  <h6>Limited Collection</h6>
+                </header>
+                <div class = "product--meta">
+                  <p>T24882</p>
+                  <p>34B</p>
+                  <p>Grey Mix</p>
+                </div>
+              </div>
+            </div>
+
+          </ul>
+          <!-- content -->
+          <!-- -->
+        </div>
+      </section>
+
+      <section id = "scrolling">
+        <header><h2>Scrolling lists</h2></header>
+
+        <div class = "sg--explanation">
+          <h4>Horizontally scrolling list</h4>
+          <p>Shows a list of products/items scrolling horizontally to the right. Only use this when the user doe not need to compare between two items and does not need to have a full understanding of how amny items are in the list - for instance showing product recommendations. Only use when you have 3 or more items in the list.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>padding top and bottom</td>
+              <td>16px</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <ul class = "list--horizontal-scroll">
+            <li class = "product">
+              <img src = "images/product.jpeg" />
+              <header class = "header--product-details">
+                <h1>Product Title</h1>
+              </header>
+            </li>
+
+            <li class = "product">
+              <img src = "images/product.jpeg" />
+              <header class = "header--product-details">
+                <h1>Product Title</h1>
+              </header>
+            </li>
+
+            <li class = "product">
+              <img src = "images/product.jpeg" />
+              <header class = "header--product-details">
+                <h1>Product Title</h1>
+              </header>
+            </li>
+
+          </ul>
+          <!-- content -->
+          <!-- -->
+        </div>
+
+        <div class = "sg--explanation">
+          <h4>Vertically scrolling list</h4>
+          <p>Try to avoid unless absolutely necessary. Full width vertical scrolling components within an already scrollable view are confusing. Try alternate techiniques, such as 'sticky' headers to leave the main view to scroll normally. If absolutely necessary, make sure the data in the list is one dimensional only.</p>
+          <h5>Metrics</h5>
+          <table class = "sg">
+            <tr>
+              <td>padding top and bottom</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>Border top and bottom</td>
+              <td>1px solid $grey-light</td>
+            </tr>
+            <tr>
+              <td>Inner shadow top and bottom</td>
+              <td>y: -2<br/>blur: 2<br/>colour: rgba(0,0,0,0.12)</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "sg--example">
+          <div class = "list--vertical-scroll-wrapper">
+            <ul class = "list list--stepped list--vertical-scroll">
+              <li>Thing 1</li>
+              <li>Long thing 2</li>
+              <li>sm 3</li>
+              <li>Have a nice day 4</li>
+              <li>Hoopla 5</li>
+            </ul>
+          </div>
+          <!-- content -->
+          <!-- -->
+        </div>
+      </section>
+
+    <!-- END MAIN CONTENT -->
+    </article>
+      <!--
+      
+      /* SCRIPTS */
+      
+      -->
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script type="text/javascript" src="../js-lib/production-min.js"></script>
+    <script type="text/javascript" src="App-min.js"></script>
+    <!-- BUILD -->
+    <!--<script type="text/javascript" src="js/App.min.js"></script>-->
+    <!-- App init -->
+    <script> //<![CDATA[  
+    $(document).ready(function(){
+        var app = new App({page: "#nav-lists"});
+    });
+    //]]></script>
+  
+  </body>
+</html>

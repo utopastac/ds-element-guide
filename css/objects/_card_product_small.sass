@@ -1,0 +1,24 @@
+.card--product-small
+
+  > div
+    display: flex
+    align-items: flex-end
+    padding-top: $space-16
+
+    h3
+      @extend .ds-subhead
+
+    > div
+      &:nth-child(2)
+        flex: 1.5
+
+      &.image
+        flex: 0.6
+
+      &.actions
+        flex: 1
+        > *
+          margin-left: auto
+          &:not(:first-child)
+            margin-top: 1.5rem
+

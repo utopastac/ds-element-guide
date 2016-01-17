@@ -1,0 +1,25 @@
+ul.card-buttons
+  display: flex
+  align-items: stretch
+  width: 100%
+  height: $button-height
+  @extend .ds-body
+  @extend .ds-caps
+  @extend .ds-bold
+
+  li
+    color: $theme-colour
+    text-align: center
+    flex: 1
+    line-height: $button-height
+    cursor: pointer
+    border-radius: 2px
+
+    @include active-state
+
+    &.primary
+      border: $border-width solid $theme-colour
+      @extend .button--outline
+
+    &:first-child
+      margin-right: $space-8

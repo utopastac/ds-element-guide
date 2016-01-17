@@ -1,0 +1,25 @@
+ul#navigation--stepped
+  display: flex
+  position: relative
+  justify-content: center
+  height: $space-40
+  align-items: center
+
+  @include full-width
+
+  li
+    position: relative
+    @extend .ds-copy
+    color: $theme-colour
+    opacity: 0.5
+
+    &:not(:last-child)
+      @include background-svg-icon($space-12, "../images/icon-arrow.svg", $theme-colour, $space-12, 0.5)
+      padding-right: $space-40
+
+    &.active
+      opacity: 1
+      @extend .ds-bold
+
+      &:after
+        opacity: 1

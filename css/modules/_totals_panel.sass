@@ -1,0 +1,48 @@
+ul#totals-panel
+  display: flex
+
+  li
+    flex: 1
+
+    width: calc(25% - #{$space-12})//($space-16 * 3) / 4
+    margin-right: $space-16
+    position: relative
+    text-align: center
+
+    &.status-green
+      h1
+        background: $ds-green
+
+    &.status-orange
+      h1
+        background: $ds-orange
+
+    &.status-blue
+      h1
+        background: $ds-blue
+
+    &.status-red
+      h1
+        background: $ds-red
+
+    &.status-grey
+      h1
+        background: $grey-medium
+
+    &:last-child
+      margin-right: 0
+
+    h1
+      display: block
+      height: $space-70
+      line-height: $space-70
+      background: $grey-bg
+      border-radius: $border-radius
+      margin-bottom: $space-8
+      color: white
+
+      @extend .ds-headline
+
+    p
+      line-height: 1
+      @extend .ds-caption
