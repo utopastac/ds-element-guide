@@ -186,7 +186,7 @@ th {
     -webkit-mask-position: center center;
     mask-position: center center; }
 
-.ds-light, .ds-display-4, .ds-display-3, #style-guide #page-heading h1, .ds-display-2, .card--product-alt > div h2, .ds-display-1 {
+.ds-light, .ds-display-4, .ds-display-3, .ds-display-2, .card--product-alt > div h2, #style-guide #page-heading h1, .ds-display-1 {
   font-weight: 300; }
 
 .ds-regular, h1, .ds-h1, h2, .ds-h2, h3, .ds-h3, h6, .ds-h6 {
@@ -201,10 +201,10 @@ th {
 .ds-display-4 {
   font-size: 11.2rem; }
 
-.ds-display-3, #style-guide #page-heading h1 {
+.ds-display-3 {
   font-size: 5.6rem; }
 
-.ds-display-2, .card--product-alt > div h2 {
+.ds-display-2, .card--product-alt > div h2, #style-guide #page-heading h1 {
   font-size: 4.5rem;
   line-height: 1; }
 
@@ -1597,14 +1597,16 @@ ul#totals-panel {
       line-height: 1; }
 
 #navigation-toggle {
-  top: 1.6rem;
-  left: 1.6rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0a4479;
+  height: 4rem;
   cursor: pointer;
-  z-index: 20000;
-  position: relative;
-  position: fixed !important; }
+  z-index: 50;
+  position: fixed !important;
+  transition: all 0.2s ease-in-out;
+  position: relative; }
   #navigation-toggle:after {
     display: block;
     content: "";
@@ -1615,31 +1617,39 @@ ul#totals-panel {
     transform: translateY(-50%);
     right: auto;
     opacity: 1;
-    background-color: black;
+    background-color: white;
     -webkit-mask: url("../images/icon-menu.svg") no-repeat;
     mask: url("../images/icon-menu.svg") no-repeat;
     -webkit-mask-position: center center;
     mask-position: center center; }
+  #navigation-toggle:after {
+    left: 1.2rem; }
   @media screen and (min-width: 750px) {
     #navigation-toggle {
       display: none; } }
-  #navigation-toggle.navigation-open {
-    position: relative; }
-    #navigation-toggle.navigation-open:after {
-      display: block;
-      content: "";
-      position: absolute;
-      width: 2rem;
-      height: 2rem;
-      top: 50%;
-      transform: translateY(-50%);
-      right: auto;
-      opacity: 1;
-      background-color: black;
-      -webkit-mask: url("../images/icon-close.svg") no-repeat;
-      mask: url("../images/icon-close.svg") no-repeat;
-      -webkit-mask-position: center center;
-      mask-position: center center; }
+
+.navigation-open #navigation-toggle {
+  position: relative;
+  opacity: 0.2; }
+  .navigation-open #navigation-toggle:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: auto;
+    opacity: 1;
+    background-color: white;
+    -webkit-mask: url("../images/icon-close.svg") no-repeat;
+    mask: url("../images/icon-close.svg") no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center; }
+.navigation-open #navigation-main {
+  left: 0; }
+.navigation-open #main-content {
+  opacity: 0.2; }
 
 #navigation-main {
   padding: 5rem 2rem 2rem 2rem;
@@ -1649,7 +1659,7 @@ ul#totals-panel {
   left: -20rem;
   background: #EDEDED;
   height: 100vh;
-  z-index: 1;
+  z-index: 100;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: flex;
@@ -1658,8 +1668,6 @@ ul#totals-panel {
   @media screen and (min-width: 750px) {
     #navigation-main {
       left: 0; } }
-  #navigation-main.navigation-open {
-    left: 0; }
   #navigation-main h6 {
     margin-bottom: 1rem; }
   #navigation-main ul {
@@ -1714,6 +1722,9 @@ ul#totals-panel {
     #style-guide #page-heading h1 {
       margin-bottom: 1.6rem;
       line-height: 1; }
+      @media screen and (min-width: 750px) {
+        #style-guide #page-heading h1 {
+          font-size: 5.6rem; } }
     #style-guide #page-heading p {
       line-height: 2.8rem; }
     #style-guide #page-heading h5 {
@@ -1722,7 +1733,8 @@ ul#totals-panel {
       color: #4A90E2;
       text-decoration: none;
       position: relative;
-      padding-left: 1.6rem; }
+      display: block;
+      padding: 0.4rem 0 0.4rem 1.6rem; }
       #style-guide #page-heading ul li a:after {
         display: block;
         content: "";
@@ -1741,14 +1753,15 @@ ul#totals-panel {
       #style-guide #page-heading ul li a:after {
         left: 0; }
   #style-guide #main-content {
-    padding-top: 5rem;
+    padding-top: 8rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     width: 100%;
     max-width: 100rem;
     transition: all 0.2s ease-in-out; }
-    #style-guide #main-content.navigation-open {
-      opacity: 0.2; }
+    @media screen and (min-width: 750px) {
+      #style-guide #main-content {
+        padding-top: 5rem; } }
     @media screen and (min-width: 750px) {
       #style-guide #main-content {
         width: calc(100% - 20rem);

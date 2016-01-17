@@ -26,6 +26,7 @@ function App(args) {
     this.navigation = $("#navigation-main");
     this.examples = $(".sg--example");
     this.codeOn = false;
+    this.navigationOpen = false;
 
     this.init(args);
 
@@ -74,7 +75,7 @@ App.prototype = {
         $("pre").hide();
 
         $("body").append('<div id = "navigation-toggle"></div>');
-        $("#navigation-toggle").click(jQuery.proxy(this, "toggleNavigation"));
+        $("#navigation-toggle").on("tap", jQuery.proxy(this, "toggleNavigation"));
     },
 
     createNavigation: function(){
@@ -139,10 +140,13 @@ App.prototype = {
     },
 
     toggleNavigation: function(){
-        this.navigation.toggleClass("navigation-open");
-        this.main.toggleClass("navigation-open");
-        $("#navigation-toggle").toggleClass("navigation-open");
-        //TweenMax.to(this.navigation, 0.4, {});
+        this.navigationOpen = !this.navigationOpen;
+        $("body").toggleClass("navigation-open");
+        if(this.navigationOpen){
+            this.main.on("tap", jQuery.proxy(this, "toggleNavigation"));
+        } else {
+            this.main.off();
+        }
     },
 
     resizeElements: function(event){

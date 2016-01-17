@@ -19,7 +19,9 @@
     max-width: 50rem
 
     h1
-      @extend .ds-display-3
+      @extend .ds-display-2
+      @include min($screen-md-min)
+        font-size: $font-size-display-3
       margin-bottom: 1.6rem
       line-height: 1
     p
@@ -39,24 +41,24 @@
           text-decoration: none
           @include background-svg-icon(10px, "../images/icon-navigation-arrow-down.svg", $theme-colour, auto)
 
-
-          padding-left: $space-16
+          display: block
+          padding: $space-4 0 $space-4 $space-16
 
           &:after
             left: 0
 
 
   #main-content
-    padding-top: 5rem
+    padding-top: 8rem
+    @include min($screen-md-min)
+      padding-top: 5rem
     padding-left: 1.2rem
     padding-right: 1.2rem
     width: 100%
     max-width: 100rem
 
     @include animate(0.2s)
-
-    &.navigation-open
-      opacity: 0.2
+      
 
     @include min($screen-md-min)
       width: calc(100% - 20rem)

@@ -1,19 +1,35 @@
 #navigation-toggle
-  top: $space-16
-  left: $space-16
-  width: $space-24
-  height: $space-24
+  top: 0
+  left: 0
+  width: 100%
+  background: $ms-navy
+  height: $space-40
   cursor: pointer
-  z-index: 20000
-
-  @include background-svg-icon($space-20, "../images/icon-menu.svg", black, auto)
+  z-index: 50
   position: fixed !important
+
+  @include animate(0.2s)
+  @include background-svg-icon($space-20, "../images/icon-menu.svg", white, auto)
+  
+  &:after
+    left: $space-12
 
   @include min($screen-md-min)
     display: none
+    
 
-  &.navigation-open
-    @include background-svg-icon($space-20, "../images/icon-close.svg", black, auto)
+.navigation-open
+
+  #navigation-toggle
+    @include background-svg-icon($space-16, "../images/icon-close.svg", white, auto)
+    opacity: 0.2
+
+  #navigation-main
+    left: 0
+
+  #main-content
+    opacity: 0.2
+
 
 #navigation-main
   padding: 5rem 2rem 2rem 2rem
@@ -23,7 +39,7 @@
   left: -20rem
   background: $grey-bg
   height: 100vh
-  z-index: 1
+  z-index: 100
   overflow-y: auto
   -webkit-overflow-scrolling: touch
 
@@ -33,9 +49,6 @@
   @include animate(0.2s)
 
   @include min($screen-md-min)
-    left: 0
-
-  &.navigation-open
     left: 0
 
   h6
