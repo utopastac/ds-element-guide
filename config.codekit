@@ -138,22 +138,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/css\/_image-svg.sass": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 2,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/_image-svg.sass",
-		"outputAbbreviatedPath": "\/css\/_image-svg.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": false
-		},
 	"\/css\/_image_svg.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

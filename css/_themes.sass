@@ -1,12 +1,37 @@
-// .theme-green
+@mixin set-theme-colour($col)
+  .button--full, ul.base-buttons, button, ul.segmented-control li:active, ul.segmented-control li.active, form.form--radio label:active, form.form--radio label.active, form.form--checkbox label:active, form.form--checkbox label.active, .button--minus:after, .button--plus:after, .form--stepped-control > div input + ul li:active, #app-header, .image-svg, ul.list--stepped li:after, ul.list--stepped-table-row li:after, ul.list--accordian > li:after, ul.list--accordian > li.active:after, ul.list--accordian > li ul li, ul.list--dropdown > li:after, ul.list--dropdown > li.active:after, ul.list--dropdown > li ul li:after, ul#navigation--stepped li:not(:last-child):after, .notification-accepted:after
+    background-color: $col
+    color: white
 
-//   .button--full, ul.base-buttons
-//     background-color: $ds-green    
+  .button--outline, input[type="text"]:focus, ul.card-buttons li, ul.segmented-control li, ul.segmented-control li:last-child, form.form--radio label, form.form--radio label:last-child, form.form--checkbox label, form.form--checkbox label:last-child, .form--stepped-control > div input + ul li:last-child, .form--stepped-control > div input + ul li, ul.list--stepped li, ul.list--stepped li:last-child, ul.list--stepped-table-row li, ul.list--stepped-table-row li:last-child, ul.list--accordian > li, ul.list--accordian > li:last-child, ul.list--dropdown > li, ul.list--dropdown > li:last-child
+    border-color: $col
 
-//   .base-buttons-blank, .base-buttons-blank li, .button--outline, input[type="text"]:focus, ul.card-buttons li
-//     border-color: $ds-green
+  .base-buttons-blank li, ul.card-buttons li, .button--link, .button--outline, ul.segmented-control li, form.form--radio label, form.form--checkbox label, ul.base-buttons.base-buttons-blank li, .prompt, ul.list--stepped li, ul.list--stepped-table-row li, ul.list--stepped-table-row li p, ul.list--accordian > li, ul.list--accordian > li.active, ul.list--dropdown > li, ul.list--dropdown > li.active, ul#navigation--stepped li, .notification-accepted
+    color: $col
 
-//   button, input[type="submit"], a.button, .base-buttons-blank li, ul.card-buttons li
-//     color: $ds-green
+  .button--outline
+    background: white
 
-$theme-colour: $ds-blue
+  ul.base-buttons li:active, ul.base-buttons li.active, button:active, button.active
+    background: darken($col, 10%)
+    color: white
+
+  .header--product-status, table thead
+    background: rgba($col, 0.12)
+
+  .button--link:active, .button--link.active
+    color: black
+
+  ul.base-buttons.base-buttons-blank, ul.base-buttons.base-buttons-blank li, ul.base-buttons.base-buttons-blank li:not(:first-child), ul.list--dropdown > li ul, ul.list--dropdown > li ul li:not(:first-child)
+    border-color: rgba($col, 0.3)
+
+  ul.list--accordian > li.active, ul.list--dropdown > li.active, .notification-accepted
+    background: rgba($col, 0.08)
+
+
+.theme--green
+  @include set-theme-colour($ms-gold)
+
+.theme--purple
+  @include set-theme-colour($ms-purple)
+

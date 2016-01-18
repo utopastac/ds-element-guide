@@ -174,13 +174,55 @@ td,
 th {
   padding: 0; }
 
+.theme--green .button--full, .theme--green ul.base-buttons, .theme--green button, .theme--green ul.segmented-control li:active, .theme--green ul.segmented-control li.active, .theme--green form.form--radio label:active, .theme--green form.form--radio label.active, .theme--green form.form--checkbox label:active, .theme--green form.form--checkbox label.active, .theme--green .button--minus:after, .theme--green .button--plus:after, .theme--green .form--stepped-control > div input + ul li:active, .theme--green #app-header, .theme--green .image-svg, .theme--green ul.list--stepped li:after, .theme--green ul.list--stepped-table-row li:after, .theme--green ul.list--accordian > li:after, .theme--green ul.list--accordian > li.active:after, .theme--green ul.list--accordian > li ul li, .theme--green ul.list--dropdown > li:after, .theme--green ul.list--dropdown > li.active:after, .theme--green ul.list--dropdown > li ul li:after, .theme--green ul#navigation--stepped li:not(:last-child):after, .theme--green .notification-accepted:after {
+  background-color: #928466;
+  color: white; }
+.theme--green .button--outline, .theme--green ul.card-buttons li.primary, ul.card-buttons .theme--green li.primary, .theme--green input[type="text"]:focus, .theme--green ul.card-buttons li, .theme--green ul.segmented-control li, .theme--green ul.segmented-control li:last-child, .theme--green form.form--radio label, .theme--green form.form--radio label:last-child, .theme--green form.form--checkbox label, .theme--green form.form--checkbox label:last-child, .theme--green .form--stepped-control > div input + ul li:last-child, .theme--green .form--stepped-control > div input + ul li, .theme--green ul.list--stepped li, .theme--green ul.list--stepped li:last-child, .theme--green ul.list--stepped-table-row li, .theme--green ul.list--stepped-table-row li:last-child, .theme--green ul.list--accordian > li, .theme--green ul.list--accordian > li:last-child, .theme--green ul.list--dropdown > li, .theme--green ul.list--dropdown > li:last-child {
+  border-color: #928466; }
+.theme--green .base-buttons-blank li, .theme--green ul.card-buttons li, .theme--green .button--link, .theme--green .button--outline, .theme--green ul.card-buttons li.primary, ul.card-buttons .theme--green li.primary, .theme--green ul.segmented-control li, .theme--green form.form--radio label, .theme--green form.form--checkbox label, .theme--green ul.base-buttons.base-buttons-blank li, .theme--green .prompt, .theme--green ul.list--stepped li, .theme--green ul.list--stepped-table-row li, .theme--green ul.list--stepped-table-row li p, .theme--green ul.list--accordian > li, .theme--green ul.list--accordian > li.active, .theme--green ul.list--dropdown > li, .theme--green ul.list--dropdown > li.active, .theme--green ul#navigation--stepped li, .theme--green .notification-accepted {
+  color: #928466; }
+.theme--green .button--outline, .theme--green ul.card-buttons li.primary, ul.card-buttons .theme--green li.primary {
+  background: white; }
+.theme--green ul.base-buttons li:active, .theme--green ul.base-buttons li.active, .theme--green button:active, .theme--green button.active {
+  background: #746951;
+  color: white; }
+.theme--green .header--product-status, .theme--green table thead {
+  background: rgba(146, 132, 102, 0.12); }
+.theme--green .button--link:active, .theme--green .button--link.active {
+  color: black; }
+.theme--green ul.base-buttons.base-buttons-blank, .theme--green ul.base-buttons.base-buttons-blank li, .theme--green ul.base-buttons.base-buttons-blank li:not(:first-child), .theme--green ul.list--dropdown > li ul, .theme--green ul.list--dropdown > li ul li:not(:first-child) {
+  border-color: rgba(146, 132, 102, 0.3); }
+.theme--green ul.list--accordian > li.active, .theme--green ul.list--dropdown > li.active, .theme--green .notification-accepted {
+  background: rgba(146, 132, 102, 0.08); }
+
+.theme--purple .button--full, .theme--purple ul.base-buttons, .theme--purple button, .theme--purple ul.segmented-control li:active, .theme--purple ul.segmented-control li.active, .theme--purple form.form--radio label:active, .theme--purple form.form--radio label.active, .theme--purple form.form--checkbox label:active, .theme--purple form.form--checkbox label.active, .theme--purple .button--minus:after, .theme--purple .button--plus:after, .theme--purple .form--stepped-control > div input + ul li:active, .theme--purple #app-header, .theme--purple .image-svg, .theme--purple ul.list--stepped li:after, .theme--purple ul.list--stepped-table-row li:after, .theme--purple ul.list--accordian > li:after, .theme--purple ul.list--accordian > li.active:after, .theme--purple ul.list--accordian > li ul li, .theme--purple ul.list--dropdown > li:after, .theme--purple ul.list--dropdown > li.active:after, .theme--purple ul.list--dropdown > li ul li:after, .theme--purple ul#navigation--stepped li:not(:last-child):after, .theme--purple .notification-accepted:after {
+  background-color: #783f91;
+  color: white; }
+.theme--purple .button--outline, .theme--purple ul.card-buttons li.primary, ul.card-buttons .theme--purple li.primary, .theme--purple input[type="text"]:focus, .theme--purple ul.card-buttons li, .theme--purple ul.segmented-control li, .theme--purple ul.segmented-control li:last-child, .theme--purple form.form--radio label, .theme--purple form.form--radio label:last-child, .theme--purple form.form--checkbox label, .theme--purple form.form--checkbox label:last-child, .theme--purple .form--stepped-control > div input + ul li:last-child, .theme--purple .form--stepped-control > div input + ul li, .theme--purple ul.list--stepped li, .theme--purple ul.list--stepped li:last-child, .theme--purple ul.list--stepped-table-row li, .theme--purple ul.list--stepped-table-row li:last-child, .theme--purple ul.list--accordian > li, .theme--purple ul.list--accordian > li:last-child, .theme--purple ul.list--dropdown > li, .theme--purple ul.list--dropdown > li:last-child {
+  border-color: #783f91; }
+.theme--purple .base-buttons-blank li, .theme--purple ul.card-buttons li, .theme--purple .button--link, .theme--purple .button--outline, .theme--purple ul.card-buttons li.primary, ul.card-buttons .theme--purple li.primary, .theme--purple ul.segmented-control li, .theme--purple form.form--radio label, .theme--purple form.form--checkbox label, .theme--purple ul.base-buttons.base-buttons-blank li, .theme--purple .prompt, .theme--purple ul.list--stepped li, .theme--purple ul.list--stepped-table-row li, .theme--purple ul.list--stepped-table-row li p, .theme--purple ul.list--accordian > li, .theme--purple ul.list--accordian > li.active, .theme--purple ul.list--dropdown > li, .theme--purple ul.list--dropdown > li.active, .theme--purple ul#navigation--stepped li, .theme--purple .notification-accepted {
+  color: #783f91; }
+.theme--purple .button--outline, .theme--purple ul.card-buttons li.primary, ul.card-buttons .theme--purple li.primary {
+  background: white; }
+.theme--purple ul.base-buttons li:active, .theme--purple ul.base-buttons li.active, .theme--purple button:active, .theme--purple button.active {
+  background: #5b306d;
+  color: white; }
+.theme--purple .header--product-status, .theme--purple table thead {
+  background: rgba(120, 63, 145, 0.12); }
+.theme--purple .button--link:active, .theme--purple .button--link.active {
+  color: black; }
+.theme--purple ul.base-buttons.base-buttons-blank, .theme--purple ul.base-buttons.base-buttons-blank li, .theme--purple ul.base-buttons.base-buttons-blank li:not(:first-child), .theme--purple ul.list--dropdown > li ul, .theme--purple ul.list--dropdown > li ul li:not(:first-child) {
+  border-color: rgba(120, 63, 145, 0.3); }
+.theme--purple ul.list--accordian > li.active, .theme--purple ul.list--dropdown > li.active, .theme--purple .notification-accepted {
+  background: rgba(120, 63, 145, 0.08); }
+
 .image-svg {
   display: inline-block;
   width: 5.6rem;
   height: 7.2rem;
-  margin-bottom: 0.8rem; }
+  margin-bottom: 0.8rem;
+  background-color: #4A90E2; }
   .image-svg.list {
-    background-color: #4A90E2;
     -webkit-mask: url(../images/icon-list.svg) no-repeat;
     mask: url(../images/icon-list.svg) no-repeat;
     -webkit-mask-position: center center;
@@ -1219,8 +1261,6 @@ form.form--checkbox label {
   background: rgba(74, 144, 226, 0.08);
   color: #4A90E2;
   position: relative; }
-  .notification-accepted h4 {
-    color: #4A90E2; }
   .notification-accepted:after {
     display: block;
     content: "";
@@ -1369,9 +1409,9 @@ table.table--product-table {
     -webkit-mask-position: center center;
     mask-position: center center; }
 
-.button-plus {
+.button--plus {
   position: relative; }
-  .button-plus:after {
+  .button--plus:after {
     display: block;
     content: "";
     position: absolute;
