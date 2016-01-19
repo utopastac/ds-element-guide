@@ -27,6 +27,7 @@ function App(args) {
     this.examples = $(".sg--example");
     this.codeOn = false;
     this.navigationOpen = false;
+    this.themes = '<div id = "theme-changer"><h5>Choose a colour theme</h5><ul class = "list list--stepped"><li data-theme = "theme--green">Green</li><li data-theme = "theme--gold">Gold</li><li data-theme = "theme--blue">Blue</li><li data-theme = "theme--purple">Purple</li><li data-theme = "theme--orange">Orange</li><li data-theme = "theme--teal">Teal</li><li data-theme = "theme--navy">Navy</li><li data-theme = "theme--grey">Grey</li><li data-theme = "theme--lilac">Lilac</li></ul></div>'
 
     this.init(args);
 
@@ -72,9 +73,13 @@ App.prototype = {
         TweenMax.from("#navigation-main", 0.75, {alpha:0});
         $(this.settings.page).addClass("active");
         $("#toggle-code").click(jQuery.proxy(this, "toggleCode"));
+        $("#change-theme").click(jQuery.proxy(this, "toggleThemes"));
         $("pre").hide();
 
-        $("body").append('<div id = "navigation-toggle"></div>');
+        $("body").append('<div id = "navigation-toggle"></div>' + this.themes);
+
+        $("#theme-changer li").click(jQuery.proxy(this, "changeTheme"));
+        this.setTheme();
         $("#navigation-toggle").on("tap", jQuery.proxy(this, "toggleNavigation"));
     },
 
@@ -137,6 +142,25 @@ App.prototype = {
             $("#toggle-code").removeClass("active").html("show code");
             $("pre").hide();
         }
+    },
+
+    toggleThemes: function(){
+        $("#theme-changer").toggle();
+    },
+
+    changeTheme: function(event){
+        var elem = $(event.currentTarget);
+        var theme = elem.data("theme");
+        localStorage.setItem('theme', theme);
+        this.setTheme();
+    },
+
+    setTheme: function(){
+        var theme = localStorage.getItem('theme');
+        $("body").removeClass().addClass(theme);
+        $("#theme-changer").hide();
+        $("#theme-changer li").removeClass("active");
+        $("[data-theme='" + theme + "']").addClass("active");
     },
 
     toggleNavigation: function(){

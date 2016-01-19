@@ -1,5 +1,5 @@
 @mixin set-theme-colour($col)
-  .button--full, ul.base-buttons, button, ul.segmented-control li:active, ul.segmented-control li.active, form.form--radio label:active, form.form--radio label.active, form.form--checkbox label:active, form.form--checkbox label.active, .button--minus:after, .button--plus:after, .form--stepped-control > div input + ul li:active, #app-header, .image-svg, ul.list--stepped li:after, ul.list--stepped-table-row li:after, ul.list--accordian > li:after, ul.list--accordian > li.active:after, ul.list--accordian > li ul li, ul.list--dropdown > li:after, ul.list--dropdown > li.active:after, ul.list--dropdown > li ul li:after, ul#navigation--stepped li:not(:last-child):after, .notification-accepted:after
+  .button--full, ul.base-buttons, button, ul.segmented-control li:active, ul.segmented-control li.active, form.form--radio label:active, form.form--radio label.active, form.form--checkbox label:active, form.form--checkbox label.active, .button--minus:after, .button--plus:after, .form--stepped-control > div input + ul li:active, #app-header, .image-svg, ul.list--stepped li:after, ul.list--stepped-table-row li:after, ul.list--accordian > li:after, ul.list--accordian > li.active:after, ul.list--accordian > li ul li, ul.list--dropdown > li:after, ul.list--dropdown > li.active:after, ul.list--dropdown > li ul li:after, ul#navigation--stepped li:not(:last-child):after, .notification-accepted:after, ul.list li.active, ul.list li:active
     background-color: $col
     color: white
 
@@ -30,8 +30,29 @@
 
 
 .theme--green
+  @include set-theme-colour($ms-green)
+
+.theme--teal
+  @include set-theme-colour($ms-teal)
+
+.theme--blue
+  @include set-theme-colour($ds-blue)
+
+.theme--orange
+  @include set-theme-colour($ds-orange)
+
+.theme--navy
+  @include set-theme-colour($ms-navy)
+
+.theme--gold
   @include set-theme-colour($ms-gold)
+
+.theme--grey
+  @include set-theme-colour($ms-dark)
 
 .theme--purple
   @include set-theme-colour($ms-purple)
+
+.theme--lilac
+  @include set-theme-colour($ms-lilac)
 
