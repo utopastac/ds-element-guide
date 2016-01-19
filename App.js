@@ -27,7 +27,7 @@ function App(args) {
     this.examples = $(".sg--example");
     this.codeOn = false;
     this.navigationOpen = false;
-    this.themes = '<div id = "theme-changer"><h5>Choose a colour theme</h5><ul class = "list list--stepped"><li data-theme = "theme--green">Green</li><li data-theme = "theme--gold">Gold</li><li data-theme = "theme--blue">Blue</li><li data-theme = "theme--purple">Purple</li><li data-theme = "theme--orange">Orange</li><li data-theme = "theme--teal">Teal</li><li data-theme = "theme--navy">Navy</li><li data-theme = "theme--grey">Grey</li><li data-theme = "theme--lilac">Lilac</li></ul></div>'
+    this.themes = '<div id = "theme-changer"><h5>Choose a colour theme</h5><ul class = "list list--stepped"><li data-theme = "theme--green">Green</li><li data-theme = "theme--gold">Gold</li><li data-theme = "theme--blue">Blue</li><li data-theme = "theme--purple">Purple</li><li data-theme = "theme--orange">Orange</li><li data-theme = "theme--teal">Teal</li><li data-theme = "theme--navy">Navy</li><li data-theme = "theme--grey">Grey</li><li data-theme = "theme--brown">Brown</li><li data-theme = "theme--lilac">Lilac</li></ul></div>'
 
     this.init(args);
 

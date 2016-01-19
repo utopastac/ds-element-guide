@@ -342,6 +342,27 @@ th {
 .theme--purple ul.list--accordian > li.active, .theme--purple ul.list--dropdown > li.active, .theme--purple .notification-accepted {
   background: rgba(120, 63, 145, 0.08); }
 
+.theme--brown .button--full, .theme--brown ul.base-buttons, .theme--brown button, .theme--brown ul.segmented-control li:active, .theme--brown ul.segmented-control li.active, .theme--brown form.form--radio label:active, .theme--brown form.form--radio label.active, .theme--brown form.form--checkbox label:active, .theme--brown form.form--checkbox label.active, .theme--brown .button--minus:after, .theme--brown .button--plus:after, .theme--brown .form--stepped-control > div input + ul li:active, .theme--brown #app-header, .theme--brown .image-svg, .theme--brown ul.list--stepped li:after, .theme--brown ul.list--stepped-table-row li:after, .theme--brown ul.list--accordian > li:after, .theme--brown ul.list--accordian > li.active:after, .theme--brown ul.list--accordian > li ul li, .theme--brown ul.list--dropdown > li:after, .theme--brown ul.list--dropdown > li.active:after, .theme--brown ul.list--dropdown > li ul li:after, .theme--brown ul#navigation--stepped li:not(:last-child):after, .theme--brown .notification-accepted:after, .theme--brown ul.list li.active, .theme--brown ul.list li:active {
+  background-color: #795548;
+  color: white; }
+.theme--brown .button--outline, .theme--brown ul.card-buttons li.primary, ul.card-buttons .theme--brown li.primary, .theme--brown input[type="text"]:focus, .theme--brown ul.card-buttons li, .theme--brown ul.segmented-control li, .theme--brown ul.segmented-control li:last-child, .theme--brown form.form--radio label, .theme--brown form.form--radio label:last-child, .theme--brown form.form--checkbox label, .theme--brown form.form--checkbox label:last-child, .theme--brown .form--stepped-control > div input + ul li:last-child, .theme--brown .form--stepped-control > div input + ul li, .theme--brown ul.list--stepped li, .theme--brown ul.list--stepped li:last-child, .theme--brown ul.list--stepped-table-row li, .theme--brown ul.list--stepped-table-row li:last-child, .theme--brown ul.list--accordian > li, .theme--brown ul.list--accordian > li:last-child, .theme--brown ul.list--dropdown > li, .theme--brown ul.list--dropdown > li:last-child {
+  border-color: #795548; }
+.theme--brown .base-buttons-blank li, .theme--brown ul.card-buttons li, .theme--brown .button--link, .theme--brown .button--outline, .theme--brown ul.card-buttons li.primary, ul.card-buttons .theme--brown li.primary, .theme--brown ul.segmented-control li, .theme--brown form.form--radio label, .theme--brown form.form--checkbox label, .theme--brown ul.base-buttons.base-buttons-blank li, .theme--brown .prompt, .theme--brown ul.list--stepped li, .theme--brown ul.list--stepped-table-row li, .theme--brown ul.list--stepped-table-row li p, .theme--brown ul.list--accordian > li, .theme--brown ul.list--accordian > li.active, .theme--brown ul.list--dropdown > li, .theme--brown ul.list--dropdown > li.active, .theme--brown ul#navigation--stepped li, .theme--brown .notification-accepted {
+  color: #795548; }
+.theme--brown .button--outline, .theme--brown ul.card-buttons li.primary, ul.card-buttons .theme--brown li.primary {
+  background: white; }
+.theme--brown ul.base-buttons li:active, .theme--brown ul.base-buttons li.active, .theme--brown button:active, .theme--brown button.active {
+  background: #593f35;
+  color: white; }
+.theme--brown .header--product-status, .theme--brown table thead {
+  background: rgba(121, 85, 72, 0.12); }
+.theme--brown .button--link:active, .theme--brown .button--link.active {
+  color: black; }
+.theme--brown ul.base-buttons.base-buttons-blank, .theme--brown ul.base-buttons.base-buttons-blank li, .theme--brown ul.base-buttons.base-buttons-blank li:not(:first-child), .theme--brown ul.list--dropdown > li ul, .theme--brown ul.list--dropdown > li ul li:not(:first-child) {
+  border-color: rgba(121, 85, 72, 0.3); }
+.theme--brown ul.list--accordian > li.active, .theme--brown ul.list--dropdown > li.active, .theme--brown .notification-accepted {
+  background: rgba(121, 85, 72, 0.08); }
+
 .theme--lilac .button--full, .theme--lilac ul.base-buttons, .theme--lilac button, .theme--lilac ul.segmented-control li:active, .theme--lilac ul.segmented-control li.active, .theme--lilac form.form--radio label:active, .theme--lilac form.form--radio label.active, .theme--lilac form.form--checkbox label:active, .theme--lilac form.form--checkbox label.active, .theme--lilac .button--minus:after, .theme--lilac .button--plus:after, .theme--lilac .form--stepped-control > div input + ul li:active, .theme--lilac #app-header, .theme--lilac .image-svg, .theme--lilac ul.list--stepped li:after, .theme--lilac ul.list--stepped-table-row li:after, .theme--lilac ul.list--accordian > li:after, .theme--lilac ul.list--accordian > li.active:after, .theme--lilac ul.list--accordian > li ul li, .theme--lilac ul.list--dropdown > li:after, .theme--lilac ul.list--dropdown > li.active:after, .theme--lilac ul.list--dropdown > li ul li:after, .theme--lilac ul#navigation--stepped li:not(:last-child):after, .theme--lilac .notification-accepted:after, .theme--lilac ul.list li.active, .theme--lilac ul.list li:active {
   background-color: #9185bc;
   color: white; }
