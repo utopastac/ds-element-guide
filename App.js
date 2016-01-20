@@ -73,7 +73,7 @@ App.prototype = {
         TweenMax.from("#navigation-main", 0.75, {alpha:0});
         $(this.settings.page).addClass("active");
         $("#toggle-code").click(jQuery.proxy(this, "toggleCode"));
-        $("#change-theme").click(jQuery.proxy(this, "toggleThemes"));
+        $("#toggle-theme").click(jQuery.proxy(this, "toggleThemes"));
         $("pre").hide();
 
         $("body").append('<div id = "navigation-toggle"></div>' + this.themes);
@@ -146,6 +146,7 @@ App.prototype = {
 
     toggleThemes: function(){
         $("#theme-changer").toggle();
+        $("#toggle-theme").toggleClass("active")
     },
 
     changeTheme: function(event){
@@ -161,6 +162,7 @@ App.prototype = {
         $("#theme-changer").hide();
         $("#theme-changer li").removeClass("active");
         $("[data-theme='" + theme + "']").addClass("active");
+        $("#toggle-theme").removeClass("active")
     },
 
     toggleNavigation: function(){
